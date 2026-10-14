@@ -19,12 +19,12 @@ Adv Sci 2026, doi:10.1002/advs.75509).
 05_fig1_coords.R          export UMAP coords for Fig 1 -> fig1_coords.csv
 
 ## Figures (Python)
-python/meta.py            REML + Hartung-Knapp reimplementation; reproduces TableS2B and leave-one-out (TableS4)
+`python/meta.py` provides an approximate independent cross-check of pooled effects; it is not the authoritative source for the reported meta-analysis statistics. `python/make_figures.py` generates Figures 1–4 and Supplementary Figure S1 from the supplied summary data. All reported pooled estimates, confidence intervals, heterogeneity statistics, and p-values are taken from the R `metafor` analysis.
 python/make_figures.py    Fig2 (forest), Fig3 (subtype heatmap), Fig4 (robustness), FigS1 (KLF2), Fig1 (UMAP)
 
 ## Environment
-R >= 4.3 with Seurat, limma, edgeR, DESeq2, metafor, Matrix (exact versions in env/r_packages.txt after running 00).
-Python >= 3.11 with numpy, scipy, matplotlib, pandas (env/requirements.txt).
+R 4.2.2 with Seurat 5.0.2, limma 3.54.2, edgeR 3.40.2, DESeq2 1.38.3, metafor 4.0.0, and Matrix 1.6-4. Full session details are recorded in `env/sessionInfo.txt`. 
+Python dependencies are listed in `env/requirements.txt`.
 
 ## Notes
 - Patient-level aggregation collapses in-house proximal/medial/distal segments of one patient
@@ -63,4 +63,4 @@ Three tiers of inputs:
 
 **Within-subtype design check**: `R/01` performs a design-matrix rank check for `~Source + Group` (falling back to `~Group` and flagging if rank-deficient) and writes per-subtype, per-source AD/Ctrl patient counts to `TableS5b_subtype_source_counts.csv`.
 
-**Exact versions**: run `Rscript R/00_sessionInfo.R` and paste its output into `env/r_packages.txt` before archiving (Zenodo).
+**Software environment:** The R package versions used for the analyses are recorded in `env/r_packages.txt`, with full session information in `env/sessionInfo.txt`.
