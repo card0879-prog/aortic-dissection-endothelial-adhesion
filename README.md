@@ -11,7 +11,7 @@ celltype, subtype_2, Source, Group, orig.ident), derived from the integrated atl
 Adv Sci 2026, doi:10.1002/advs.75509).
 
 ## Run order (R; cluster via `Rscript`)
-00_sessionInfo.R          capture exact package versions into sessionInfo.txt  (RUN THIS, paste output into env/r_packages.txt)
+`00_sessionInfo.R` records the R session information. The environment used for the analyses has already been documented in `env/sessionInfo.txt` and `env/r_packages.txt`.
 01_pseudobulk_meta.R   AUTHORITATIVE (reproduces reported tables): cohort counts -> S1; per-cohort voom -> S2A; metafor REML+KNHA meta -> S2B; leave-one-out (HK+conventional) -> S4; within-subtype 12 tests -> S5; design rank check + per-source counts -> S5b
 02_edgeR_DESeq2.R      multi-method sensitivity edgeR-QLF + DESeq2 per cohort -> S3
 03_KLF2_sensitivity.R  per-cohort adhesion AD coef with/without KLF2 covariate (wide) -> TableS6_KLF2_sensitivity.csv
@@ -20,7 +20,6 @@ Adv Sci 2026, doi:10.1002/advs.75509).
 
 ## Figures (Python)
 `python/meta.py` provides an approximate independent cross-check of pooled effects; it is not the authoritative source for the reported meta-analysis statistics. `python/make_figures.py` generates Figures 1–4 and Supplementary Figure S1 from the supplied summary data. All reported pooled estimates, confidence intervals, heterogeneity statistics, and p-values are taken from the R `metafor` analysis.
-python/make_figures.py    Fig2 (forest), Fig3 (subtype heatmap), Fig4 (robustness), FigS1 (KLF2), Fig1 (UMAP)
 
 ## Environment
 R 4.2.2 with Seurat 5.0.2, limma 3.54.2, edgeR 3.40.2, DESeq2 1.38.3, metafor 4.0.0, and Matrix 1.6-4. Full session details are recorded in `env/sessionInfo.txt`. 
