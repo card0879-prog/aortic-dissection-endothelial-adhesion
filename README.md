@@ -35,7 +35,7 @@ Python dependencies are listed in `env/requirements.txt`.
 Code: MIT (see LICENSE). Summary tables (TableS1–S7) and figures: CC-BY 4.0.
 
 ## Citation
-See CITATION.cff. Please cite the article and this repository.
+See CITATION.cff. Please cite this repository. The associated manuscript is under preparation.
 
 ## Suggested GitHub "About"
 Description: Patient-level multicohort single-cell meta-analysis of endothelial
