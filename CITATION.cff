@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this analysis code or the summary data, please cite it as below. The associated manuscript is in preparation."
+title: "Analysis code: multicohort single-cell analysis of endothelial adhesion molecules in human aortic dissection"
+authors:
+  - family-names: Tao
+    given-names: Jing
+version: 1.0.0
+date-released: "2026-10-14"
+license: MIT
+repository-code: "<GitHub repository URL — insert after creating the repo>"

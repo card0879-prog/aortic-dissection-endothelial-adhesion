@@ -1,0 +1,6 @@
+Cohort,n_AD_patients,n_Ctrl_patients,note
+GSE189795,5,4,public
+GSE213740,6,3,public
+GSE222318,9,5,public
+Own,23,3,in-house; 53 AD samples (Prox/Med/Dist) collapsed to 23 patients
+TOTAL,43,15,"58 patients; atlas EC=43,831 cells"
