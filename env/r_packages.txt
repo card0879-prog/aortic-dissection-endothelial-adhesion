@@ -1,9 +1,9 @@
-# Exact versions: run R/00_sessionInfo.R and paste sessionInfo() output here before upload.
-# Core packages used:
-R (>=4.3)
-Seurat
-limma
-edgeR
-DESeq2
-metafor
-Matrix
+R 4.2.2
+Seurat 5.0.2
+limma 3.54.2
+edgeR 3.40.2
+DESeq2 1.38.3
+metafor 4.0.0
+Matrix 1.6-4
+
+Full session details: env/sessionInfo.txt
