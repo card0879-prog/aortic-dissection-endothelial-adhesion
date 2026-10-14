@@ -1,0 +1,9 @@
+# Exact versions: run R/00_sessionInfo.R and paste sessionInfo() output here before upload.
+# Core packages used:
+R (>=4.3)
+Seurat
+limma
+edgeR
+DESeq2
+metafor
+Matrix
